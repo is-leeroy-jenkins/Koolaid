@@ -7,11 +7,35 @@
     <UseWPF>true</UseWPF>
     <AssemblyName>Koolaid</AssemblyName>
     <RootNamespace>Koolaid</RootNamespace>
+    <StartupObject>WebCrawler.App</StartupObject>
+    <ApplicationIcon>Resources\Assets\NinjaImages\BudExNinjaGrey.ico</ApplicationIcon>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <Title>Koolaid</Title>
+    <Description>Koolaid is a WPF-based web crawler written in C-Sharp.</Description>
+    <PackageIcon>Logo.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <Optimize>True</Optimize>
+    <WarningLevel>6</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <WarningLevel>6</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Resources\Assets\NinjaImages\BudExNinjaGrey.ico" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Syncfusion.Licensing" Version="24.1.41" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="Resources\Assets\NinjaImages\png\Logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 </Project>
