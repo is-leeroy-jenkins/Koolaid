@@ -1,0 +1,202 @@
+﻿<Window
+    x:Class="WebCrawler.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WebCrawler"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Web Crawler"
+    Width="800"
+    Height="450"
+    MinWidth="800"
+    MinHeight="449"
+    MaxWidth="800"
+    MaxHeight="450"
+    ResizeMode="CanMinimize"
+    mc:Ignorable="d">
+    <Grid>
+        <Grid
+            Width="772"
+            Height="40"
+            Margin="10,369,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top">
+            <ProgressBar
+                x:Name="MyProgressBar"
+                Width="661"
+                Height="20"
+                Margin="10,10,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" />
+            <Button
+                x:Name="ActivationButton"
+                Width="75"
+                Margin="688,10,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Click="ActivationButton_Click"
+                Content="Start" />
+        </Grid>
+        <Grid
+            Width="772"
+            Height="47"
+            Margin="10,0,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top">
+            <TextBox
+                x:Name="UrlInput"
+                Height="23"
+                Margin="10,21,108,0"
+                VerticalAlignment="Top"
+                Text="https://"
+                TextWrapping="Wrap" />
+            <TextBlock
+                Margin="10,5,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Text="URL"
+                TextWrapping="Wrap" />
+            <Button
+                x:Name="ResetButton"
+                Width="75"
+                Height="23"
+                Margin="687,21,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Click="ResetButton_Click"
+                Content="Reset crawler" />
+        </Grid>
+        <Grid
+            Width="767"
+            Height="245"
+            Margin="15,119,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top">
+            <TextBox
+                x:Name="KeywordInput"
+                Width="246"
+                Height="23"
+                Margin="10,31,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Text=""
+                TextWrapping="Wrap" />
+            <Button
+                x:Name="AddKeywordButton"
+                Width="76"
+                Height="23"
+                Margin="261,31,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Click="AddKeywordButton_Click"
+                Content="Add" />
+            <ScrollViewer
+                x:Name="ScrollViewerKeywords"
+                Width="327"
+                Height="179"
+                Margin="10,59,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" />
+            <ScrollViewer
+                x:Name="ActionLogScrollViewer"
+                Width="409"
+                Height="201"
+                Margin="348,38,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" />
+            <TextBlock
+                Margin="348,14,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Text="Action log"
+                TextWrapping="Wrap" />
+            <TextBlock
+                Margin="10,10,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Text="Keywords the url must contain"
+                TextWrapping="Wrap" />
+        </Grid>
+        <Grid
+            Width="772"
+            Height="67"
+            Margin="10,52,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top">
+            <CheckBox
+                x:Name="IgnoreParamsCheckBox"
+                Margin="10,10,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="Discard url parameters" />
+            <CheckBox
+                x:Name="LookForFilesCheckBox"
+                Margin="10,42,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="Look for files" />
+            <Grid
+                Width="306"
+                Height="67"
+                Margin="158,0,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top">
+                <TextBox
+                    x:Name="NumThreadsInput"
+                    Width="120"
+                    Height="23"
+                    Margin="10,34,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Text="4"
+                    TextWrapping="Wrap" />
+                <TextBox
+                    x:Name="NumQueriesPerThreadInput"
+                    Width="158"
+                    Height="23"
+                    Margin="136,34,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Text="4"
+                    TextWrapping="Wrap" />
+                <TextBlock
+                    Margin="10,13,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Text="Number of threads"
+                    TextWrapping="Wrap" />
+                <TextBlock
+                    Margin="135,13,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Text="Number of queries per thread"
+                    TextWrapping="Wrap" />
+            </Grid>
+            <TextBox
+                x:Name="PathInput"
+                Width="237"
+                Height="23"
+                Margin="464,34,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Text=""
+                TextWrapping="Wrap" />
+            <TextBlock
+                Margin="464,13,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Text="Path"
+                TextWrapping="Wrap" />
+            <Button
+                x:Name="SaveButton"
+                Width="56"
+                Height="23"
+                Margin="706,34,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Click="SaveButton_Click"
+                Content="Save" />
+        </Grid>
+
+    </Grid>
+</Window>
