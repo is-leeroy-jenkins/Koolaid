@@ -3,9 +3,6 @@
 # Koolaid is a WPF-based web crawler written in C-Sharp.
 
 
-
-## [Report](./REPORT.md)
-
 ## ﻿![](https://github.com/is-leeroy-jenkins/Koolaid/blob/master/Resources/Assets/GithubImages/repo-image.png)
 
 
@@ -37,18 +34,17 @@
 
 - Built on NET 8
 - Supports AnyCPU as well as x86/x64 specific builds
-- [Controls](https://github.com/is-leeroy-jenkins/Koolaid/tree/main/Controls) - main UI layer and associated controls and related functionality.
-- [Enumerations](https://github.com/is-leeroy-jenkins/Koolaid/tree/main/Enumerations) - various enumerations used for budgetary accounting.
-- [Extensions](https://github.com/is-leeroy-jenkins/Koolaid/tree/main/Extensions)- useful extension methods for budget analysis by type.
-- [Clients](https://github.com/is-leeroy-jenkins/Koolaid/tree/main/Clients) - other tools used and available.
-- [IO](https://github.com/is-leeroy-jenkins/Koolaid/tree/main/IO) - input output classes used for networking and the file systemm.
-- [Static](https://github.com/is-leeroy-jenkins/Koolaid/tree/main/Static) - static types used in the analysis of environmental budget data.
-- [Interfaces](https://github.com/is-leeroy-jenkins/Koolaid/tree/main/Interfaces) - abstractions used in the analysis of environmental budget data.
-- `bin` - Binaries are included in the `bin` folder due to the complex Baby setup 
+- [Crawler](https://github.com/is-leeroy-jenkins/Koolaid/blob/master/Data/Crawler.cs) - the web crawler class.
+- [UI](https://github.com/is-leeroy-jenkins/Koolaid/blob/master/UI) - main UI layer and associated controls and related functionality.
+- [Assets](https://github.com/is-leeroy-jenkins/Koolaid/tree/master/Resources/Assets) - resources used in koolaid.
+
+
+
+## [Report](./REPORT.md)
 
 
 ![](./img/2.png)
 
-### [Example output](./Map.txt)
+## [Example output](./Map.txt)
 
 
