@@ -1,9 +1,9 @@
 ﻿
+## ﻿![](https://github.com/is-leeroy-jenkins/Koolaid/blob/master/Resources/Assets/GithubImages/repo-image.png)
+
+
 
 # Koolaid is a WPF-based web crawler written in C-Sharp.
-
-
-## ﻿![](https://github.com/is-leeroy-jenkins/Koolaid/blob/master/Resources/Assets/GithubImages/repo-image.png)
 
 
 
@@ -35,18 +35,19 @@ The class packs inside itself
 * ``List`` of tasks that do all the work
 * ``SiteMap`` (my own implementation) that holds recursive data structure to map out the web pages 
 
-	Crawler is started by calling Run method, which creates desired amount of Tasks.
-	``CancellationToken`` is also passed in case the user wants to stop the execution. Each task will start by dequeing an 
-	url from the queue. If the queue is empty, task will try dequeing item until it will timeout (5 sec)
-	or it will dequeue url succesfully. Queue uses ConcurrentQueue class so it is thread safe.
-	Url is then used to create a http request. First status code is checked to be ok and then the header content is checked to be text/html.
-	If this is ok, page is loaded and passed to helper function which finds all urls by looking for strings in the html which start with ``href="`` and end with ``"``.
+Crawler is started by calling Run method, which creates desired amount of Tasks.
+``CancellationToken`` is also passed in case the user wants to stop the execution. Each task will start by dequeing an 
+url from the queue. If the queue is empty, task will try dequeing item until it will timeout (5 sec)
+or it will dequeue url succesfully. Queue uses ConcurrentQueue class so it is thread safe.
+Url is then used to create a http request. First status code is checked to be ok and then the header content is checked to be text/html.
+If this is ok, page is loaded and passed to helper function which finds all urls by looking for strings in the html 
+which start with ``href="`` and end with ``"``.
 
-	These links are then added to a HashSet which is basically an unordered list. I will call it a list for now the keep things simple. 
-	Elements in this list are then added to a list which contains all urls, if it is not already in it, and it will also get added to 
-	queue if the url has not been yet visited and is not invalid file type such as .exe or .jpeg.
-	After parsing the urls from the body of html, the current url is added to a list which holds all visited urls.
-	After that, new url is dequeued and same process is repeated.
+These links are then added to a HashSet which is basically an unordered list. I will call it a list for now the keep things simple. 
+Elements in this list are then added to a list which contains all urls, if it is not already in it, and it will also get added to 
+queue if the url has not been yet visited and is not invalid file type such as .exe or .jpeg.
+After parsing the urls from the body of html, the current url is added to a list which holds all visited urls.
+After that, new url is dequeued and same process is repeated.
 
 
 ## ![](https://github.com/is-leeroy-jenkins/Koolaid/blob/main/Resources/Assets/GitHubImages/documentation.png) Documentation
