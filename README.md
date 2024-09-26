@@ -6,7 +6,7 @@
 
 ## [Report](./REPORT.md)
 
-## ﻿![](https://github.com/is-leeroy-jenkins/Koolaid/blob/main/Resources/Assets/GitHubImages/Koolaid.png)
+## ﻿![](https://github.com/is-leeroy-jenkins/Koolaid/blob/master/Resources/Assets/GithubImages/repo-image.png)
 
 
 
