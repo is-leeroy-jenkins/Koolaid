@@ -9,7 +9,11 @@
 
 ## ![](https://github.com/is-leeroy-jenkins/Koolaid/blob/main/Resources/Assets/GitHubImages/features.png)  Features
 
-- Mutliple data providers.
+	Web crawlers, also known as spiders, are most often used by search engines such as Google, Bing DuckDuckGo, 
+	to go through web pages and read the content on them. Web crawlers work by giving them an initial address to 
+	start from and from there it will find new addresses to browse through. Web crawlers benefit a lot from concurrency,
+	since usually the highest amount of time is spent loading the page. By using some concurrent method such as using multiple 
+	threads to load and read through the pages, performance of the crawler can be substantially increased..
 
 
 
