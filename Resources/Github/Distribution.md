@@ -1,8 +1,7 @@
-# How to distribute Sherpa within your own Department/Agency/Region/Division/Branch/Section
-
+# How to distribute Koolaid within your organization
 #### Step 1: Clone the source
 
-Create a Github clone of Sherpa using [our tutorial](Compilation.md).
+Create a Github clone of Koolaid using [our tutorial](Compilation.md).
 
 #### Step 2: Edit the configuration strings
  

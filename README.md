@@ -19,15 +19,15 @@
 
 - You will need .NET 8.
 
-- You need to install the version of VC++ Runtime that Baby Browser needs. Since we are using CefSharp 106, according to [this](https://github.com/cefsharp/CefSharp/#release-branches) we need the above versions
+- You need to install the version of VC++ Runtime that Baby Browser needs. 
 
 
 ## ![](https://github.com/is-leeroy-jenkins/Koolaid/blob/main/Resources/Assets/GitHubImages/documentation.png) Documentation
 
-- [User Guide](Resources/Github/Users.md)
-- [Compilation Guide](Resources/Github/Compilation.md)
-- [Configuration Guide](Resources/Github/Configuration.md)
-- [Distribution Guide](Resources/Github/Distribution.md)
+- [User Guide](Resources/Github/Users.md) - How to get Koolaid
+- [Compilation Guide](Resources/Github/Compilation.md) - How to compile koolaid.
+- [Configuration Guide](Resources/Github/Configuration.md) - Configuration settings used in koolaid.
+- [Distribution Guide](Resources/Github/Distribution.md) - Create a new installer package
 
 
 ## ![](https://github.com/is-leeroy-jenkins/Koolaid/blob/main/Resources/Assets/GitHubImages/csharp.png) Code

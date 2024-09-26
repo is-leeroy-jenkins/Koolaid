@@ -1,8 +1,8 @@
-# How to compile Sherpa
+# How to compile Koolaid
 
-#### Step 1: Fork Sherpa
+#### Step 1: Fork Koolaid
 
-Fork the Sherpa repository on GitHub.
+Fork the Koolaid repository on GitHub.
 
 #### Step 2: Install Visual Studio
 
@@ -18,12 +18,12 @@ Open VS Community and select "Clone a repository"
 
 #### Step 3: Clone this project
 
-Type in your Sherpa fork URL and press "Clone"
+Type in your Koolaid fork URL and press "Clone"
 
 ![image](https://user-images.githubusercontent.com/104514709/183603880-92217d8a-bc99-4adf-b6d7-030096576090.png)
 
 #### Step 4: Develop!
 
-You now have a copy of Sherpa! Press "Start" after you choose the system architecture
+You now have a copy of Koolaid! Press "Start" after you choose the system architecture
 
 ![image](https://user-images.githubusercontent.com/104514709/183604128-771daefc-6254-41bc-8660-2d28200a0b1e.png)
